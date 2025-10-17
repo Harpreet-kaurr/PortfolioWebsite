@@ -9,7 +9,7 @@ const Contact = () => {
 
   const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const TEMPLATE_OWNER_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_OWNER_ID;
-  const TEMPLATE_AUTOREPLY_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_AUTOREPLY_ID; // ✅ added
+  const TEMPLATE_AUTOREPLY_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_AUTOREPLY_ID;
   const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = async (e) => {
@@ -48,7 +48,6 @@ const Contact = () => {
       formRef.current.reset();
     } catch (err) {
       console.error('Email send error:', err);
-      alert('❌ There was an error sending your message. Please try again later.');
     } finally {
       setSending(false);
     }
