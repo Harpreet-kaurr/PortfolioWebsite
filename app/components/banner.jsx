@@ -9,6 +9,7 @@ const banner = () => {
         <br />
         I&apos;m a full stack web developer.
       </h1>
+      <CanvasCursor />
 
       <a href='#projects'
         className="flex items-center justify-center text-red-500 border-2 border-red-500 py-2 px-6 font-semibold 
